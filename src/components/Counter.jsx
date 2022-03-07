@@ -40,6 +40,7 @@ function Counternotebooks(){
     const [counter,setCounter] = useState(44);
     const HandlerChange = (value)=>{
         setCounter(counter+value);
+        
     }
        
      return (
@@ -58,6 +59,7 @@ function CounterInkpens(){
     const [counter,setCounter] = useState(78);
     const HandlerChange = (value)=>{
         setCounter(counter+value);
+       
     }
        
      return (
@@ -74,11 +76,11 @@ function CounterInkpens(){
 
 
 function Total(){
-    
+    let x = CounterInkpens();
     return(
       
         <div>
-            <h3>{Counterbooks()}</h3>
+            <h3></h3>
         </div>
     )
 }

@@ -66,7 +66,7 @@ function CounterInkpens(){
     <div className="items">
            <span> Inkpens:</span>
            <button className="addInkpen" onClick={()=>HandlerChange(1)}>+</button>
-           <button className="remInkpen" >-</button>
+           <button className="remInkpen" onClick={()=>{if(counter>=1){HandlerChange(-1)}}}>-</button>
            <span className="totalInkpens">{counter}</span>
     </div>
        
